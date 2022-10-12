@@ -10,6 +10,10 @@
         body {
             background-color: aquamarine;
         }
+
+        mark {
+            background-color: rgb(13, 143, 13);
+        }
     </style>
 </head>
 <body>
@@ -21,12 +25,45 @@
         <p>
             Nesta Frase, temos um <strong>termo em destaque </strong> usando a tag &lt;STRONG&gt;(Essa tag é semântica, possui significado e forma)
         </p>
-    <h2>Itálico / Ênfase</h2>
+    <h2><i>Itálico / Ênfase</i></h2>
         <p>
             Nesta frase, temos <i>um termo em itálico</i> usando a tag &lt;i&gt;(essa tag é não semântica, ela não tem significado só possui forma)
         </p>
         <p>
             Nesta frase, temos <em>um termo em ênfase</em> usando a tag &lt;EM&gt;(Essa tag é semântica, possui significado e forma)
         </p>
+        <h2><mark>Texto Marcado</mark></h2>
+            <p>
+                podemos também criar <mark style="background-color:gray;">um texto marcado</mark> usando a tag &lt;MARK&gt;. <br>
+                Aqui nesse caso a marcação ficou cinza pois coloquei uma folha de estilo dentro de uma tag individual, portanto, a marcação de estilo criada na área HEAD nao afetou essa marcação. Caso eu queira colocar uma nova marcação ela terá a cor escolhida pela marcação da folha style criada na parte da tag HEAD.
+            </p>
+            <p>
+                <mark>Mudamos acima a cor da marcação com CSS style dentro da Tag MARK e escolhendo a opção background-color: (cor desejada)</mark>
+            </p>
+        <h2><big>Texto Grande</big> e <small>Pequeno</small></h2>
+            <p>
+                Estamos criando um <big>texto grande</big> e um <small>texto pequeno</small> nesse parágrafo
+            </p>
+        <h2><del>Texto Excluído</del></h2>
+            <p>
+                Podemos marcar <del>um texto com excluído</del> para indicar que ele deve ser lido, porém não deve ser considerado
+            </p>
+        <h2><ins>Texto Incluído</ins></h2>            
+            <p>
+                Podemos marcar <ins>um texto como inserido</ins> para dar ênfase e indicar que ele foi adicionado posteriormente
+            </p>
+        <h2>Texto Sobrescrito</h2>    
+            <p>
+                Podemos inserir coisas do tipo x<sup>20</sup> + 3
+            </p>
+        <h2>Texto Subscrito</h2>
+            <p>
+                Para inserir coisas do tipo H<sub>2</sub>O
+            </p>
+        <h2>Resumo das TAGS utilizadas nesse exercício</h2>
+        <p>
+            <a href="resumo-tag.html">Resumo</a>
+        </p>
+                        
 </body>
 </html>
