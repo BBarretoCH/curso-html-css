@@ -12,7 +12,7 @@
         }
 
         mark {
-            background-color: rgb(13, 143, 13);
+            background-color: lime;
         }
     </style>
 </head>
@@ -32,38 +32,72 @@
         <p>
             Nesta frase, temos <em>um termo em ênfase</em> usando a tag &lt;EM&gt;(Essa tag é semântica, possui significado e forma)
         </p>
-        <h2><mark>Texto Marcado</mark></h2>
-            <p>
-                podemos também criar <mark style="background-color:gray;">um texto marcado</mark> usando a tag &lt;MARK&gt;. <br>
-                Aqui nesse caso a marcação ficou cinza pois coloquei uma folha de estilo dentro de uma tag individual, portanto, a marcação de estilo criada na área HEAD nao afetou essa marcação. Caso eu queira colocar uma nova marcação ela terá a cor escolhida pela marcação da folha style criada na parte da tag HEAD.
+    <h2><mark>Texto Marcado</mark></h2>
+        <p>
+            podemos também criar <mark style="background-color:gray;">um texto marcado</mark> usando a tag &lt;MARK&gt;. <br>
+            Aqui nesse caso a marcação ficou cinza pois coloquei uma folha de estilo dentro de uma tag individual, portanto, a marcação de estilo criada na área HEAD nao afetou essa marcação. Caso eu queira colocar uma nova marcação ela terá a cor escolhida pela marcação da folha style criada na parte da tag HEAD.
+        </p>
+        <p>
+            <mark>Mudamos acima a cor da marcação com CSS style dentro da Tag MARK e escolhendo a opção background-color: (cor desejada)</mark>
             </p>
-            <p>
-                <mark>Mudamos acima a cor da marcação com CSS style dentro da Tag MARK e escolhendo a opção background-color: (cor desejada)</mark>
+    <h2><big>Texto Grande</big> e <small>Pequeno</small></h2>
+        <p>
+            Estamos criando um <big>texto grande</big> e um <small>texto pequeno</small> nesse parágrafo
+         </p>
+    <h2><del>Texto Excluído</del></h2>
+        <p>
+            Podemos marcar <del>um texto com excluído</del> para indicar que ele deve ser lido, porém não deve ser considerado
             </p>
-        <h2><big>Texto Grande</big> e <small>Pequeno</small></h2>
-            <p>
-                Estamos criando um <big>texto grande</big> e um <small>texto pequeno</small> nesse parágrafo
-            </p>
-        <h2><del>Texto Excluído</del></h2>
-            <p>
-                Podemos marcar <del>um texto com excluído</del> para indicar que ele deve ser lido, porém não deve ser considerado
-            </p>
-        <h2><ins>Texto Incluído</ins></h2>            
-            <p>
-                Podemos marcar <ins>um texto como inserido</ins> para dar ênfase e indicar que ele foi adicionado posteriormente
-            </p>
-        <h2>Texto Sobrescrito</h2>    
-            <p>
-                Podemos inserir coisas do tipo x<sup>20</sup> + 3
-            </p>
-        <h2>Texto Subscrito</h2>
-            <p>
-                Para inserir coisas do tipo H<sub>2</sub>O
-            </p>
-        <h2>Resumo das TAGS utilizadas nesse exercício</h2>
+    <h2><ins>Texto Incluído</ins></h2>            
+        <p>
+             Podemos marcar <ins>um texto como inserido</ins> para dar ênfase e indicar que ele foi adicionado posteriormente
+         </p>
+    <h2>Texto Sobrescrito</h2>    
+        <p>
+            Podemos inserir coisas do tipo x<sup>20</sup> + 3
+        </p>
+    <h2>Texto Subscrito</h2>
+        <p>
+            Para inserir coisas do tipo H<sub>2</sub>O
+        </p>
+<h1><code>Código-Fonte e Pré-formatação</code></h1>
+        <p>
+            O comando <code>document.getElementById('teste')</code> é escrito em linguagem Javascript
+        </p>
+        <p>                   
+    <pre>
+        <code>
+            num = int(input('digite um número'))
+            if num % 2 == 0;
+                Print(f' O número {num} é PAR')
+            else:
+                print(f 'o número {num} é ÍMPAR')
+            print('Fim do programa')
+        </code>
+    </pre>         
+        </p>    
+    <h2><q>Citações</q></h2>
+        <p>
+            Como diria o pai de um amigo: <q>O computador é um burro muito rápido</q><br>
+            Quando queremos citar alguem, é interessante utilizar a tag &lt;q&gt; pois há o sentido de uma citação. Dê preferencia a tag ao invés de colocar aspas direto.
+        </p>
+    <H2>Citações completas(blockquote)</H2>
+        <p>
+            É usada quando queremos colocar um trecho relativamente grande como citação ao invés de apenas uma frase.<br>
+            <em>
+                <blockquote cite="http://www.worldwildlife.org/who/index.html">
+                    For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.
+                </blockquote>
+            </em><br>
+            o comando "cite" serve para auxiliar nos mecanismos de busca, visualmente não há diferença nenhuma a ser exibida no site.
+        </p>
+    <h2>Abreviações (<abbr title="abreviações">ABBR</abbr>)</h2>
+        <p> Há também a possibilidade de se criar abreviações para siglas que utilizamos ao longo do conteúdo utilizando a tag &lt;abbr&gt;. Logo quando inserimos a tag na sigla de interesse aparece um espaço de "title" que devemos colocar o significado da sigla.<br>
+            Ex: Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. Estou adorando!
+        </p>    
+    <h2>Resumo das TAGS utilizadas nesse exercício</h2>
         <p>
             <a href="resumo-tag.html">Resumo</a>
         </p>
-                        
 </body>
-</html>
+</html> 
