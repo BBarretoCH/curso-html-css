@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Criando listas</title>
+    <style>
+        Body{
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <h1>Listas Ordenadas</h1>
+        <p>
+            Quando criamos listas de algo onde a ordem importa chamamos isso de <strong> Ordered list (ol)</strong>. Para criar uma ordered list devemos colocar a tag <strong>&lt;ol&gt;</strong> para delimitar a lista e a tag <strong>&lt;li&gt;</strong> para listar os itens.<br>
+            <strong>li = list item</strong><br>
+            <ol>
+                <Li>Item 1
+                <li>Item 2
+                <li>Item 3
+                <li>Item 4
+                <li>Item 5
+            </ol>
+            <strong>OBS: A TAG <Strong><ins><big>ol</big></ins></Strong> é de fechamento obrigatório e a tag <strong><ins><big>il</big></ins></strong> de fechamento opcional</strong> segundo a W3C.<br>
+            A tag ol possui um parâmetro <em>type</em> que determina o tipo de marcador da lista atual. São eles:
+            <ol>
+                1- Valor padrão. Cria listas numerada. Ex: 1.2.3.4.5<br>
+                A- Cria lista com ordenação alfabética maiúscula. Ex: A. B. C. D. E.<br>
+                a- Cria lista com ordenação alfabética minúscula. Ex: a. b. c. d. e.<br>
+                I- Cria lista com ordenação em número romanos maiúsculos. Ex: I. II. III. IV. V. <br>
+                i- Cria lista com ordenação em número romanos minúsculos. Ex: i. ii. iii. iv. v. <br>
+            </ol>
+        </p>
+        <p>
+            Além disso podemos inserir o parâmetro <em>start</em> para determinar o inicio.<br>
+            EX: &lt;ol <em>type</em> = "I" <em>start</em> = "5"&gt; então deverar aparecer da seguinte forma: V. VI. VII. VIII, IX, X...
+        </p>
+    <h1>Listas Não Ordenadas</h1>
+        <p>
+            Podemos também criar listas que não necessitam de ordem. Possuem o termo <strong><em>Unordered list &lt;ul&gt;</em></strong>, são chamadas também como lista com marcadores. Podemos criar a lista da mesma forma que fizemos anteriormente, porém ao invés de utilizar a <strong>&lt;ol&gt;</strong>, utilizaremos a <strong>&lt;ul&gt;</strong>.
+            <ul>
+                <li>item 1</li>
+                <li>item 2</li>
+                <li>item 3</li>
+                <li>item 4</li>
+                <li>item 5</li>
+            </ul>
+            Como é possível ver, a estrutra é semelhante. Vale lembrar novamente que a tag ul tem fechamento obrigatório e a tag li tem fechamento opcional.<br>
+            Assim como na <strong><em>ordered list</em></strong>, podemos inserir o parâmetro <code>type</code> para determinar o tipo de simbolo que irá aparecer na lista. Por padrão temos uma esfera preta totalmente preenchida, entretanto pode mudar utilizando as seguintes opções;
+            <ul type ="disc">
+                <li><code>disc</code>. Representa o padrão</li>
+            </ul>
+            <ul type="circle">
+                <li><code>circle</code>. Representa um circulo sem preenchimento</li>
+            </ul>
+            <ul type="square">
+                <li><code>square</code>. Representa um quadrado preto preenchido (semelhante ao padrão)</li>
+            </ul>
+        </p>
+    <h1>Misturando Listas</h1>
+        <p>
+            É possível criar listas mistas colocando itens e subitens para criar algo parecido como uma ordenação em sumário.
+            <ol>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <ol type="a">
+                    <li>item 2.1</li>
+                    <li>item 2.2</li>
+                    <li>item 2.3</li>
+                </ol>
+                <li>Item 3</li>
+                <li>Item 4</li>
+            </ol>
+            OBS: <strong>É possível misturar listas ordenadas (ol) com listas não ordenadas (ul)</strong>
+        </p>
+        <p>
+            Exercício proposto na aula:<br>
+            <strong><a href="lista.html">Lista dos Meus Jogos Favoritos</a></strong>
+        </p>
+    <h1>Listas de definições</h1>
+        <p>
+            Esse tipo de lista não possui demarcações (ordenação ou simbolos de listas não ordenadas). Sua função é atribuir significado a um determinado termo. <br>
+            Vejamos uns exemplos:
+            <dl>
+                <dt>HTML
+                    <dd>Linguagem de marcação criada para desenvolver conteúdo de sites
+                <dt>CSS
+                    <dd>Linguagem de marcação para folhas de estilos em sites
+                <dt>JavaScript
+                    <dd>Linguagem de programação usada para interatividade dentro de site        
+            </dl>
+        </p>
+        <p>
+            Para a montagem do código da lista acima devemos utilizar a tag <strong>&lt;dl&gt;</strong> para criar a lista de definição (exige fechamento). A Tag <strong>&lt;dt&gt;</strong>(EX: HTML) para especificar um termo e <strong>&lt;dd&gt;</strong>(Definição apresentada na lista) para explicar o que o termo significa. As tags <strong>&lt;dt&gt;</strong>e<strong>&lt;dd&gt;</strong> possuem fechamento opcional.
+        </p>            
+</body>
+</html>
