@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem flexível">
+    </picture>
+    <h2>RESUMO</h2>
+    <p>Nesse exercício foram utilizadas imagens de tamanhos diferentes para adapta-las ao tamanho da tela do usuário. Conforme era detectado o tamanho da tela de exibição a imagem se adequava automaticamente. Para tal foi utilizada a tag <strong>&lt;picture&gt;</strong>. Primeiramente, dentro da tag <strong>&lt;picture&gt;</strong> foi inserida a tag img (já vista anteriormente) e para esse exercício, foi selecionada a maior imagem disponível. Em seguida foi colocada imediatamente acima a tag <strong>&lt;source&gt;</strong>(Escolhida a source:media:type) e colocada a imagem imediatamente menor. O mesmo procedimento deve se repetir para o número de imagens que deseja adequar o tamanho da tela. Dentro da tag <strong>&lt;source&gt;</strong> temos o parametro media = max(por padrão vem min)-width: 00px; srcset="imagens/foto-g.png(path da imagem)" e type ="(image/png)tipo de arquivo/extensão".<br>Os parâmetros escolhidos para esse exercício não são fixos, podem ser outros que irão funcionar do mesmo jeito, somente é necesserário ajustar as necessidades que aparecerão durante a criação do site.</p>
+</body>
+</html>
