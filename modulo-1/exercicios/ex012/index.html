@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor</p>
+    <video width="300" poster="midia/cachoeira.jpg" controls allowfullscreen>
+        <source src="midia/video.mp4" type="video/mp4">
+        <source src="midia/video.m4v" type="video/mp4">
+        <source src="midia/video.webm" type="video/webm">
+        <source src="midia/video.ogv" type="video/ogg">
+    </video>
+    <h2>Resumo</h2>
+    <p>Para a inserção de vídeos no site devemos seguir os mesmos passos da inserção de audio. Para maiores detalhes <a href="../ex011/index.html" target="_blank" rel="next"><strong><ins>Clique Aqui</ins></strong></a>. Apesar das semelhanças, na inserção de vídeo nós temos o parâmetro <strong>poster</strong> que é utilizado para inserir uma thumb no vídeo, ou seja, coloca uma imagem de quando o vídeo não estiver rodando. A imagem da thumb deve ter dimenões iguais ao do vídeo, pois caso não tenha, irá ocorrer uma mudança na exibição o que visualmente é deselegante (o exemplo colocado nesse exercício exibe justamente esse problema).</p>
+    <p>O vídeo colocado aqui nesse exercício é de hospedagem própria, lembrando que isso pode gerar custos alto ao cliente para manter o vídeo em funcionamento, portanto, é mais recomendado que os vídeos presentes no site sejam de hospedagem externa, assunto que será tratado no próximo tópico.</p>
+    <h1>Inserindo vídeos do youtube</h1>
+    <p>Para inserir um vídeo do youtube podemos seguir as seguintes etapas:</p>
+    <ul>
+        <li>Acessar www.youtube.com</li>
+        <li>clicar em compartilhar</li>
+        <li>clicar em incorporar</li>
+        <li>copiar o código HTML gerado pelo próprio youtube</li>
+        <li>colar no editor de código</li>
+    </ul>
+    <p>E pronto seu vídeo estará disponível na página.</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/zrIfhUVB_3o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <h1>Inserindo Vídeos do Vímeo</h1>
+    <iframe src="https://player.vimeo.com/video/121557024?h=c686e59a46&autoplay=1&loop=1&portrait=0" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+<p><a href="https://vimeo.com/121557024" target="_blank " rel="external">Pexels Videos</a> from <a href="https://vimeo.com/pexels" target="_blank" rel="external">Pexels</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+<p>Pexels Videos is a website where you can find free stock videos: http://videos.pexels.com</p>
+</body>
+</html>
