@@ -17,5 +17,38 @@
     </picture>
     <h2>RESUMO</h2>
     <p>Nesse exercício foram utilizadas imagens de tamanhos diferentes para adapta-las ao tamanho da tela do usuário. Conforme era detectado o tamanho da tela de exibição a imagem se adequava automaticamente. Para tal foi utilizada a tag <strong>&lt;picture&gt;</strong>. Primeiramente, dentro da tag <strong>&lt;picture&gt;</strong> foi inserida a tag img (já vista anteriormente) e para esse exercício, foi selecionada a maior imagem disponível. Em seguida foi colocada imediatamente acima a tag <strong>&lt;source&gt;</strong>(Escolhida a source:media:type) e colocada a imagem imediatamente menor. O mesmo procedimento deve se repetir para o número de imagens que deseja adequar o tamanho da tela. Dentro da tag <strong>&lt;source&gt;</strong> temos o parametro media = max(por padrão vem min)-width: 00px; srcset="imagens/foto-g.png(path da imagem)" e type ="(image/png)tipo de arquivo/extensão".<br>Os parâmetros escolhidos para esse exercício não são fixos, podem ser outros que irão funcionar do mesmo jeito, somente é necesserário ajustar as necessidades que aparecerão durante a criação do site.</p>
+
+    <h1>Reproduzindo Audios</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+    <audio src="midia/happy-mistake.mp3" autoplay controls preload="metadata" loop></audio>
+    <audio preload="metadata" controls>
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+        <source src="midia/guanacast-33.ogg" type="audio/ogg">
+        <source src="midia/guanacast-33.wav" type="audio/wav">
+    </audio>
+    <h2>Resumo</h2>
+    <p>Nesse tópico foi mostrado um áudio que foi inserido ao site. Inicialmente foi visitado a bibliioteca de mídia do youtube para adquirir um áudio livre para utilização no projeto. Os passos foram os seguintes:</p>
+    <ul>
+        <li>entrar na página www.youtube.com</li>
+        <li>clicar no perfil e ir na opção youtube studio</li>
+        <li>Nos ícones à esquerda da tela clicar em biblioteca de áudio</li>
+        <li>colocar os filtros de interesse e baixar o audio</li>
+    </ul>
+    <p>De posse do(s) áudio(s) de interesse é só utilizar a tag <strong>&lt;audio&gt;</strong>(semelhante a tag IMG). Caso o navegador nao seja compatível com a reprodução do áudio podemos inserir os parâmetros <strong>controls</strong> para inserir uma caixa com play para iniciar o áudio; Também há a possibilidade de se colocar o parâmetro <strong>autoplay</strong> para iniciar o áudio automáticamente.</p>
+    <p>Vale ressaltar que nem sempre o navegador será compatível com a extensão do áudio que está sendo inserida no site, portanto, é importante mostrar para ele(navegador) que é possível carregar outros formatos. Para fazer isso devemos realizar os seguintes passos:</p>
+    <ul>
+        <li>inserir a tag <strong>&lt;audio&gt;</strong></li>
+        <li>apagar os parâmetros automáticos que são criados</li>
+        <li>criar um conteúdo aninhado dentro da tag audio com o conteúdo (source:src)</li>
+        <li>No parâmetro src="colocar o path do áudio(midia/happy-mistake.mp3)" e no parâmetro type="colocar o texto relativo ao formato do arquivo(audio/mpeg) ***lembre-se de consultar o site do media type"</li>
+    </ul>
+    <p>Assim o site tentará carregar o primeiro arquivo listado dentro do conteúdo aninhado da tag strong>&lt;audio&gt;</strong>, se caso não encontrar, tentará carregar o próximo e assim por diante. Se nenhum formato for compatível com o navegador, o áudio não será carregado, mas ainda é possível disponibilizar o áudio para download inserindo um link com a tag <strong>&lt;a&gt;</strong>. <br> Ainda vale destacar que dentro da tag strong>&lt;audio&gt;</strong> podemos inserir o parâmetro preload. Esse parâmetro significa que algo que será carregado(ou não, caso escolhida a opção none)com o site. Aqui vão as opções:</p>
+    <ul>
+        <li>Auto -> O site será carregado somente quando todo o conteúdo da mídia for carregado. Isso é ruim porque arquivos grandes podem deixar o site lento</li>
+        <li>Metadata -> irá carregar apenas algumas informações essenciais, sem pesar o carregamento do site</li>
+        <li>none -> não irá carregar nenhuma informação, apenas quando o usuário desejar.</li>
+    </ul>
+    <h2><strong><big>IMPORTANTE</big></strong></h2>
+    <p>Desde a versão 66 do chrome o google deixou de funcionar o parâmetro autoplay de reprodução automática, para uma explicação mais detalhada <a href="https://youtu.be/auXhaBGgK1A" target="_blank " rel="external"><strong>CLIQUE AQUI</strong></a></p>
 </body>
 </html>
