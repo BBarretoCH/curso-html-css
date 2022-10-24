@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilos externos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Capítulo 1</h1>
+    <h2>Capítulo 1.1</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore neque quis saepe quidem fugiat nobis inventore consequatur magnam tempora eos illo laudantium eum magni voluptates, ab doloremque deleniti et tenetur.</p>
+    <h2>Capítulo 1.2</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed cupiditate expedita quod culpa, voluptas labore, quia repellendus, assumenda voluptates repudiandae voluptatem. Nulla quia totam ad est delectus ipsa. Dolorum, rerum.</p>
+    <h1>Capítulo 2</h1>
+    <h2>Capítulo 2.1</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, corporis totam? Tempora, officiis facere provident nisi, voluptatibus ipsam recusandae ducimus error est neque eos omnis? A perferendis aspernatur reprehenderit dolorem?</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos earum ducimus, vero magni, dolore repellat expedita neque nemo fuga maxime, necessitatibus nostrum animi laudantium saepe! Dolorum eos cumque quos accusantium.</p>
+    <p><a href="pagina02.html" target="_self">Ir para a página 2</a></p>
+
+    <h1 style="color: yellow;">RESUMO</h1>
+    <p>Por fim, trabalhamos nessa aula a aplicação de CSS externa. Para chamar uma CSS para o nosso código devemos criar na área da tag HEAD um <strong><code>link:css</code></strong>. Logo após a criação, o hyperlink de referencia (HRef) aparece com o nome <q>style.css</q>(padrão) e para criar o arquivo podemos segurar <strong>CTRL e clicar</strong> e o arquivo será criado.</p>
+    <h2>Dentro da página de estilo (Style.CSS)</h2>
+    <p>Um comando recomendado utilizar é o <strong>@charset "UTF-8"</strong>. Esse comando indica que a folha de estilo é compatível com os caracteres presentes no UTF-8. Em seguida podemos colocar todas as características que nosso site deverá ter, tais como, cor de fundo, fonte, posição de imagens e links, etc, com o uso dos seletores para as tags de interesse.</p>
+    <p>A vantagem é que podemos chamar a folha de estilo com apenas uma linha de comando (<strong><code>link:css</code></strong>) inserido na área da tag HEAD, como dito anteriormente, e pronto, todo o estilo criado no arquivo <q>style.css</q> será aplicado à nossa página.<br> Não menos importante, devemos destacar a ordem de prioridade que de leitura do código (não a ordem de prioridade de uso) das CSS. A Ordem (maior prioridade para menor prioridade) é <strong>CSS Inline -> CSS Interna -> CSS Externa</strong>.
+    <p>Também é possível misturar os estilos(inline, interno e externo) caso sejam necessárias mudanças afunilidas, ou seja, cada vez mais específicas. Por exemplo:</p>
+    <ul>
+        <li>temos um site com 15 páginas e aplicamos um estilo para todas elas (CSS externa)</li>
+        <li>Dentre 15 páginas do site, queremos mudar o estilo da página 4 (utilizamos a CSS interna).</li>
+        <li>Dentro da página 7, queremos que o segundo H1 tenha uma cor diferente (aplicamos CSS inline)</li>
+    </ul>
+    <p style="margin-bottom: 10;">E assim por diante.</p>
+    <p style="margin-top: 10;"><strong style="color: black">OBS: Qualquer comando inserido com @ no início será uma regra aplicada à CSS.</strong></p>
+
+</body>
+</html>
