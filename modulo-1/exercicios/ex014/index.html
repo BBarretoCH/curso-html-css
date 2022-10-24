@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilos Locais ou Internos</title>
+    <style>
+        body{
+            background-color: lightskyblue;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+        h1 {
+            color:darkblue;
+            background-color: dodgerblue;
+            font-size: 1.5em;
+        }
+        h2 {
+            color: darkred;
+            font-size: 1.2em;
+        }
+        p {
+            text-align: justify; /*alinhamento de texto*/
+            line-height: 1.5; /*espaçamento do texto*/
+            letter-spacing: normal; /*espaçamento da letra*/
+            margin-top: 0;
+            margin-bottom: 0;
+            text-indent: 1.5em; /*espaçamento inicial do parágrafo*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Capítulo 1</h1>
+    <h2>Capítulo 1.1</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore neque quis saepe quidem fugiat nobis inventore consequatur magnam tempora eos illo laudantium eum magni voluptates, ab doloremque deleniti et tenetur.</p>
+    <h2>Capítulo 1.2</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed cupiditate expedita quod culpa, voluptas labore, quia repellendus, assumenda voluptates repudiandae voluptatem. Nulla quia totam ad est delectus ipsa. Dolorum, rerum.</p>
+    <h1>Capítulo 2</h1>
+    <h2>Capítulo 2.1</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, corporis totam? Tempora, officiis facere provident nisi, voluptatibus ipsam recusandae ducimus error est neque eos omnis? A perferendis aspernatur reprehenderit dolorem?</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos earum ducimus, vero magni, dolore repellat expedita neque nemo fuga maxime, necessitatibus nostrum animi laudantium saepe! Dolorum eos cumque quos accusantium.</p>
+    <h1 style="color: yellow;">RESUMO</h1>
+    <p>Nessa aula nós trabalhamos a CSS interna, a qual é aplicada na área da tag HEAD do nosso código com o uso da tag <strong>&lt;style&gt;</strong>. A vantagem dessa estratégia é que ao criarmos um estilo para um seletor da tag de interesse (body { }) aplicaremos as mudanças para tudo que estiver contido na tag BODY. Sempre que desejarmos aplicar estilo para uma tag podemos criar o seletor dessa tag. Mas essa estratégia possui desvantagens. Ao utilizarmos a CSS interna ou local se caso tivermos mais de uma página, devemos copiar a tag style e todo o seu contéudo para todas as páginas que quisermos aplicar. E novamente, em caso de necessidade de alteração de estilos de uma determinada página, deverá ser feito em cada página de interesse.</p>
+    <h1 style="color: yellow">Extra</h1>
+    <p>Aqui irei colocar alguns parâmetros utilizados para mudar a aparência deste conteúdo</p>
+    <ul>
+        <li>background-color = muda a cor de fundo</li>
+        <li>font-size = tamanho da fonte</li>
+        <li>font-family = tipo de fonte</li>
+        <li>letter-spacing = espaçamento entre as letras</li>
+        <li>magin-top = margem do cima do parágrafo</li>
+        <li>margin-bottom = margem de baixo do parágrafo</li>
+        <li>text-indent = Espaçamento do inicio do parágrafo</li>
+        <li>text-align = alinhamento do texto</li>
+        <li>line-height = espaçamento entre as linhas</li>
+        <li>color = determina a cor</li>
+    </ul>
+    <p>As letras px, em após a atribuição dos valores serão explicadas posteriomente</p>
+</body>
+</html>
