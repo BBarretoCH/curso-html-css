@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonte Externa</title>
+    <style>
+        @font-face {
+            font-family: 'Love' ;
+            src: url('love larry ttf.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1 {
+            font-family: 'Love', Times, serif;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+    <h1>Fontes Externas</h1>
+    <p>Site útil: <a href="https://www.dafont.com/pt/"></a>Dafont</p>
+    <p>É necessário verificar sempre se as fontes possuem glifos com acentuação</p>
+    <ul>
+        <li>Baixar no site de interesse a fonte desejada</li>
+        <li>descompactar e colocar o arquivo da fonte dentro da pasta do projeto</li>
+        <li>Dentro do VS Code colocar a seguinte regra</li>
+            <ul>
+                <li>@font-face{<br>
+                            font-family: <strong>nome desejado</strong>;<br>
+                            src: URL(path da fonte.format) format (otf ou ttf)
+                            format = opentype(otf), truetype(truetype)<br>
+                            font-weight: normal;<br>
+                            font-style: normal;<br>
+                }
+                </li>
+            </ul>
+    </ul>
+</body>
+</html>
