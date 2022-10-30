@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=fire">
+    <title>Fontes em CSS</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+        @import url('https://fonts.googleapis.com/css2?family=Freehand&family=Sofia&display=swap');
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        code {
+            font-size: 18px;
+            font-weight: lighter;
+            font-style: italic;            
+        }
+        h1, h2 {
+            text-decoration: underline;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        p {
+            font-family: fantasy;
+            text-align: justify;
+            text-indent: 20px;
+            font-size: 100%;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="font-effect-fire">Trabalhando com Fontes</h1>
+    <p>A familia da fonte pode ser escolhida pelo parâmetro <code><strong>font-family: ;</strong></code>. As familias apresetam fontes distintas que possui forma muito semelhante, mudando apenas poucos detalhes entre elas. Dentre elas podemos escolher as serifadas e as nao serifadas.</p>
+    <p>Quando inserimos o navegador busca a primeira fonte indicada, caso não ache, buscará a segunda, caso não ache novamente ele irá colocar uma fonte qualquer que seja serifada(serif) ou não serifada(sans-serif). Exemplos</p>
+    <ul>
+        <li>font-family: 'Times New Roman', Times, serif;</li>
+        <li> font-family: Arial, Helvetica, sans-serif;</li>
+    </ul>
+    <p><Strong>OBS:</Strong> Quando há mais de uma palavra no nome da fonte devemos colocar aspas simples ou duplas</p>
+
+    <h2>Tamanho de fontes e medidas</h2>
+    <p>Para estudar esse tópico é recomendado seguir as recomendações da W3C que é o orgão oficial da HTML e CSS. Dentre as medidas das fontes nós temos as absolutas e as relativas:</p>
+    <ul>
+        <li>Absolutas</li>
+            <ul type="Circle">
+                <li>cm (centímetro)</li>
+                <li>mm (milímetro)</li>
+                <li>ln (polegada)</li>
+                <li>px (pixel)</li>
+                <li>pc (paica)</li>
+            </ul>
+        <li>Relativas</li>
+            <ul type="Circle">
+                <li>em (relativa ao tamanho atual da fonte)</li>    
+                <li>ex (relativo a altura x)</li>
+                <li>rem (relativo a fonte configurada no body)</li>
+                <li>vw (largura da viewport: relativo ao tamanho da tela)</li>
+                <li>vh (Altura da viewport)</li>
+            </ul>
+    </ul>
+    <p> Informação importante: 16px é o padrão para navegadores =  1em. A recomendação oficial é para o uso de px para absolutas e em para relativas.</p>
+
+    <h2>Peso e estilo das Fontes</h2>
+    <p>O peso das fontes está relacionado com <q>largura</q> da fonte através do parâmentro <code><strong>font-weight: ;</strong></code> no qual aceita os valores: <strong>lighter, normal, bold, bolder</strong></p>
+    <p>podemos utilizar a escala numérica que vai de 100(lighter)-900(bolder)</p>
+    <p>OBS: Não são todas as fontes que possuem pesos, por isso pode ser que algumas vezes não funcione esse parâmetro</p>
+
+    <p>Font-Style: possui variações <em>normal e italic</em></p>
+    <p>Para sublinhado: inserir o parâmetro <code><strong>text-decoration: underline;</strong></code></p>
+
+    <h2>Shorthand</h2>
+    <p>Recurso utilizado para simplifica o código. Portanto, em vez de colocarmos várias linhas com font-family, font-size, font-weight, font-style, podemos fazer isso somente em uma linha de código usando somente o parâmetro <code><strong>font: ;</strong></code>. A ordem é:</p>
+    <ol>
+        <li>Font-style</li>
+        <li>font-weight</li>
+        <li>font-size</li>
+        <li>font-family</li>
+    </ol>
+    <p style="font: normal bolder 1.2em arial; text-decoration: underline;">Exemplo: <code><strong>font: italic bolder 3em 'work sans', sans-serif;</strong></code></p>
+    <p>Sempre devemos indicar os 4 parâmetros destacados na listagem acima.</p>
+
+    <p>Para enterder melhor sobre fontes visite <a href="https://www.w3schools.com/" target="_blank" rel="external">W3SCHOOLS</a> pode procurar por web safe font combinations</p>
+
+    <h1 style="font-family:'Kaushan Script' ; font-size: 3em;">Importando fontes do google fonts</h1>
+    <p>Nesse tópico iremos ver como podemos importar fontes do google fonts. Para isso podemos seguir os passos a diante:</p>
+    
+    <div id="recorners"></div> <ul>
+        <li>procurar pelo site <a href="https://fonts.google.com/">google fonts</a></li>
+        <li>dentro do site podemos escolher qualquer fonte disponivel e clicar nela</li>
+        <li>o site irá mostrar todas as variações de fontes da familia</li>
+        <li>podemos selecionar os estilos de interesse</li>
+        <li>ao lado direito clicar em import e copiar o que estiver dentro da tag style</li>
+        <li>colar como regra dentro do nosso código dentro da nossa css</li>
+        <li>ao lado direito no site aparece a font-family da font que escolhemos</li>
+    </ul>
+</body>
+</html>
