@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: darkgray;
+        }
+        h1 {
+            text-align: center;
+            font-size: 3em;
+            text-transform: capitalize;
+            min-width: 100vw;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: auto;
+            min-width: 300px;
+            max-width: auto;
+        }
+
+        caption {
+            font-size: 2em;
+        }
+
+        thead {
+            background-color: gray;
+        }
+
+        thead th {
+            padding: 8px;
+        }
+        a {
+            text-decoration: none;
+            color: blue;
+        }
+        a:hover {
+            color: white;
+        }
+
+        tbody tr:hover {
+            background-color: rgba(218, 165, 32, 0.452);
+            color: white;
+
+        }
+        tbody > tr:nth-child(2n):hover{
+            background-color: rgba(218, 165, 32, 0.452);
+        }
+
+        tbody > tr:nth-child(2n) {
+            background-color: rgba(212, 212, 212, 0.705);
+        }
+
+        td {
+            border: none;
+            padding: 8px;
+            text-align: center;
+        }
+
+        .name {
+            color: blue;
+            font-weight: bold;
+        }
+
+        .name:hover {
+            text-decoration: underline;
+        }
+        .tier1 {
+            color: white;
+            font-weight: bold;
+            background-color: green;
+            height: 20px;
+            width: 45px;
+            padding: 0px;
+            display: inline-block;
+            margin-inline-start: 20px;
+            vertical-align: -webkit-baseline-middle;
+        }
+
+        .tier2 {
+            background-color: rgb(212, 159, 24);
+            color: white;
+            font-weight: bold;
+            height: 20px;
+            width: 45px;
+            padding: 0px;
+            display: inline-block;
+            margin-inline-start: 20px;
+            vertical-align: -webkit-baseline-middle;
+            
+        }
+
+        .price {
+            color: darkgreen;
+        }
+
+        tfoot {
+            background-color: gray;
+            color: black;
+            font-weight: bold;
+        }
+
+        div {
+            overflow-x: auto;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>teste de tabelas</h1>
+    <div>
+        <table align="center">
+            <caption>MODERN DECKS</caption>
+            <thead>
+                <tr>
+                    <th>Name Deck</th>
+                    <th>Meta Share</th>
+                    <th>Trend</th>
+                    <th>Tier</th>
+                    <th>Decks</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="name"><a href="https://mtgdecks.net/Modern/izzet-murktide" target="_blank">IZZET MURKTIDE</a></td>
+                    <td>7.27%</td>
+                    <td>&#x2B07;-3.49%</td>
+                    <td class="tier1">Tier-1</td>
+                    <td>411</td>
+                    <td class="price">$1013</td>
+                </tr>
+                <tr>
+                    <td class="name"><a href="https://mtgdecks.net/Modern/hammer-time" target="_blank">HAMMER TIME</a></td>
+                    <td>6.01%</td>
+                    <td>&#x2198;-1.14%</td>
+                    <div>
+                        <td class="tier1">Tier-1</td>
+                    </div>
+                    <td>340</td>
+                    <td class="price">$844</td>
+                </tr>
+                <tr>
+                    <td class="name"><a href="https://mtgdecks.net/Modern/temur-creativity" target="_blank">TEMUR CREATIVITY</a></td>
+                    <td>5,99%</td>
+                    <td>&#x2B06;3,90%</td>
+                    <td class="tier1">Tier-1</td>
+                    <td>339</td>
+                    <td class="price">$1116</td>
+                </tr>
+                <tr>
+                    <td class="name"><a href="https://mtgdecks.net/Modern/rakdos-scam" target="_blank">RAKDOS SCAM</a></td>
+                    <td>4,54%</td>
+                    <td>&#x2197;+2,00%</td>
+                    <td class="tier1">Tier-1</td>
+                    <td>257</td>
+                    <td class="price">$1128</td>
+                </tr>
+                <tr>
+                    <td class="name"><a href="https://mtgdecks.net/Modern/burn" target="_blank">BURN</a></td>
+                    <td>4,17%</td>
+                    <td>&#x2198;-1,11%</td>
+                    <td class="tier1">Tier-1</td>
+                    <td>236</td>
+                    <td class="price">$459</td>
+                </tr>
+                <tr>
+                    <td class="name"><a href="https://mtgdecks.net/Modern/jeskai-breach" target="_blank">JESKAI BREACH</a></td>
+                    <td>2,39%</td>
+                    <td>&#x2197;+1,07%</td>
+                    <td class="tier2">Tier-2</td>
+                    <td>135</td>
+                    <td class="price">$1181</td>
+                </tr>
+                <tr>
+                    <td class="name"><a href="https://mtgdecks.net/Modern/mono-green-tron" target="_blank">MONO GREEN TRON</a></td>
+                    <td>2,25%</td>
+                    <td>&#x2198;-0,42%</td>
+                    <td class="tier2">Tier-2</td>
+                    <td>127</td>
+                    <td class="price">$636</td>
+                </tr>
+                <tr>
+                    <td class="name"><a href="https://mtgdecks.net/Modern/4-color-omnath" target="_blank">4 COLOR OMNATH</a></td>
+                    <td>2,14%</td>
+                    <td>&#x2197;+1,72%</td>
+                    <td class="tier2">Tier-2</td>
+                    <td>121</td>
+                    <td class="price">$1408</td>
+                </tr>
+                <tr>
+                    <td class="name"><a href="https://mtgdecks.net/Modern/8-cast-affinity" target="_blank">8-CAST AFFINITY</a></td>
+                    <td>1,47%</td>
+                    <td>&#x2197;-0,27%</td>
+                    <td class="tier2">Tier-2</td>
+                    <td>83</td>
+                    <td class="price">$363</td>
+                </tr>
+                <tr>
+                    <td class="name"><a href="https://mtgdecks.net/Modern/grixis-death-s-shadow" target="_blank">GRIXIS DEATH SHADOW</a></td>
+                    <td>1,45%</td>
+                    <td>&#x2198;-1,08%</td>
+                    <td class="tier2">Tier-2</td>
+                    <td>82</td>
+                    <td class="price">$1019</td>
+                </tr>
+                <tfoot>
+                    <tr>
+                        <td colspan="6">Tabela desenvolvida como exercício no dia 23/11 às 20hrs</td>
+                    </tr>
+                </tfoot>
+        </table>
+    </div>
+</body>
+</html>
