@@ -7,13 +7,15 @@
     <title>Desafio-android</title>
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
     <header>
         <h1>CURIOSIDADES DA TECNOLOGIA</h1>
         <p>Tudo aquilo que você sempre quis saber sobre o mundo tech em um único lugar.</p> 
     </header>
-    <nav>
+    <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span>
+    <nav id="itens">
         <a href="#">Home</a>
         <a href="#">Notícias</a>
         <a href="#">Curiosidades</a>
@@ -107,5 +109,15 @@
     <footer>
         Página criada por <strong><a href="https://github.com/BBarretoCH" target="_blank">Bruno Barreto</a></strong> para o módulo 2 do <strong>curso de HTML5 e CSS do Curso em Vídeo.</strong>
     </footer>
+
+    <script>
+        function clickMenu () {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>
