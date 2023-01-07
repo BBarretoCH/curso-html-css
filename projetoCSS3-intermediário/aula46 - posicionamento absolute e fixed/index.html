@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamento(static, relative, absolute, fixed)</title>
+    <style> /*sempre que quisermos centralizar uma div devemos aplicar uma "margin:auto;"*/
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-color: #007fc7;
+        }
+        #container {
+            background-color: #fff;
+            width: 800px;
+            border: 1px solid red;
+            margin: 10px auto;
+            padding: 10px;
+        }
+        span {
+            color: RED;
+            font-weight: bold;
+        }
+
+        h1{
+            position: relative;
+        }
+
+        p {
+            width: 300px;
+            margin: 10px 0px;
+        }
+
+        /* .relative {
+
+        } tem seu posicionamento baseado na posição inicial do elemento seguindo o fluxo normal do documento. Partindo da sua posição normal e utlizando os parâmentos top, bottom, left and right, podemos movimentar nosso elemento.*/
+
+        .absolute { /*será sempre posicionado em relação ao container que tem uma posição definida. Caso não haja nenhuma posição defiinida do container que nosso elemento está contido, este será posicionado ao container da página, ou seja, do body. */
+            position: absolute; 
+            border: 1px solide red;
+            background-color: #f2f2f2;
+            top: 80px;
+            right: 100px;
+        }
+
+        .fixed { /* o posi*/
+            position: fixed;
+            border: 1px solide red;
+            background-color: #f2f2f2;
+            top: 10px;
+            right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Posicionamentos</h1>
+        <p><span>P1</span> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore sapiente sequi sunt dicta ullam. Nulla hic labore maiores dolore voluptatibus, eaque expedita, voluptate accusamus nisi sint eveniet esse, ab assumenda?</p>
+        <p class="fixed"><span>P2</span> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore sapiente sequi sunt dicta ullam. Nulla hic labore maiores dolore voluptatibus, eaque expedita, voluptate accusamus nisi sint eveniet esse, ab assumenda?</p>
+        <p><span>P3</span> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore sapiente sequi sunt dicta ullam. Nulla hic labore maiores dolore voluptatibus, eaque expedita, voluptate accusamus nisi sint eveniet esse, ab assumenda?</p>
+        <p><span>P3</span> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore sapiente sequi sunt dicta ullam. Nulla hic labore maiores dolore voluptatibus, eaque expedita, voluptate accusamus nisi sint eveniet esse, ab assumenda?</p>
+        <p><span>P3</span> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore sapiente sequi sunt dicta ullam. Nulla hic labore maiores dolore voluptatibus, eaque expedita, voluptate accusamus nisi sint eveniet esse, ab assumenda?</p>
+        <p><span>P3</span> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore sapiente sequi sunt dicta ullam. Nulla hic labore maiores dolore voluptatibus, eaque expedita, voluptate accusamus nisi sint eveniet esse, ab assumenda?</p>
+        <p><span>P3</span> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore sapiente sequi sunt dicta ullam. Nulla hic labore maiores dolore voluptatibus, eaque expedita, voluptate accusamus nisi sint eveniet esse, ab assumenda?</p>
+        <p><span>P3</span> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore sapiente sequi sunt dicta ullam. Nulla hic labore maiores dolore voluptatibus, eaque expedita, voluptate accusamus nisi sint eveniet esse, ab assumenda?</p>
+        <p><span>P3</span> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore sapiente sequi sunt dicta ullam. Nulla hic labore maiores dolore voluptatibus, eaque expedita, voluptate accusamus nisi sint eveniet esse, ab assumenda?</p>
+        <p><span>P3</span> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore sapiente sequi sunt dicta ullam. Nulla hic labore maiores dolore voluptatibus, eaque expedita, voluptate accusamus nisi sint eveniet esse, ab assumenda?</p>
+        <p><span>P3</span> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore sapiente sequi sunt dicta ullam. Nulla hic labore maiores dolore voluptatibus, eaque expedita, voluptate accusamus nisi sint eveniet esse, ab assumenda?</p>
+        <p><span>P3</span> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore sapiente sequi sunt dicta ullam. Nulla hic labore maiores dolore voluptatibus, eaque expedita, voluptate accusamus nisi sint eveniet esse, ab assumenda?</p>
+        <p><span>P3</span> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore sapiente sequi sunt dicta ullam. Nulla hic labore maiores dolore voluptatibus, eaque expedita, voluptate accusamus nisi sint eveniet esse, ab assumenda?</p>
+        <p><span>P3</span> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore sapiente sequi sunt dicta ullam. Nulla hic labore maiores dolore voluptatibus, eaque expedita, voluptate accusamus nisi sint eveniet esse, ab assumenda?</p>
+        <p><span>P3</span> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore sapiente sequi sunt dicta ullam. Nulla hic labore maiores dolore voluptatibus, eaque expedita, voluptate accusamus nisi sint eveniet esse, ab assumenda?</p>
+
+
+    </div>
+</body>
+</html>

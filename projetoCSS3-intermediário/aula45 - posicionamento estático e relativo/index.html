@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamento(static, relative, absolute, fixed)</title>
+    <style> /*sempre que quisermos centralizar uma div devemos aplicar uma "margin:auto;"*/
+        body {
+            background-color: #007fc7;
+        }
+        #container {
+            background-color: #fff;
+            width: 800px;
+            border: 1px solid red;
+            margin: 10px auto;
+            padding: 10px;
+        }
+        span {
+            color: RED;
+            font-weight: bold;
+        }
+
+        h1{
+            position: relative;
+        }
+
+        p {
+            width: 300px;
+        }
+
+        .relative {
+            border: 1px solid red;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Posicionamentos</h1>
+        <p><span>P1</span> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore sapiente sequi sunt dicta ullam. Nulla hic labore maiores dolore voluptatibus, eaque expedita, voluptate accusamus nisi sint eveniet esse, ab assumenda?</p>
+        <p class="relative"><span>P2</span> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore sapiente sequi sunt dicta ullam. Nulla hic labore maiores dolore voluptatibus, eaque expedita, voluptate accusamus nisi sint eveniet esse, ab assumenda?</p>
+        <p><span>P3</span> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore sapiente sequi sunt dicta ullam. Nulla hic labore maiores dolore voluptatibus, eaque expedita, voluptate accusamus nisi sint eveniet esse, ab assumenda?</p>
+    </div>
+</body>
+</html>

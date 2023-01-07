@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobrepondo elementos</title>
+    <style>
+        .conteudo1 {
+            border: 1px solid red;
+            background-color: green;
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            z-index: 0;
+        }
+
+        .conteudo2 {
+            border: 1px solid red;
+            background-color: darkslategray;
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            top: 160px;
+            left: 160px;
+            z-index: 1;
+        }
+        .conteudo3 {
+            border: 1px solid red;
+            background-color: orange;
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            top: 80px;
+            left: 80px;
+            z-index: 0;
+        }
+        /*z-index =  define a posição no eixo z(para dentro ou para fora do plano) de acordo com o valor atribuído, sendo 0 mais abaixo e o maior valor mais acima. Caso dois conteúdos tenham o mesmo valor de z-index a exibição irá seguir a ordem de do documento (quemt aparecer primeiro """"""terá o z-index menor""""""")*/
+    </style>
+</head>
+<body>
+    <div class="conteudo1">
+        conteudo 1
+    </div>
+    <div class="conteudo2">
+        conteudo 2
+    </div>
+    <div class="conteudo3">
+        conteudo 3
+    </div>
+</body>
+</html>

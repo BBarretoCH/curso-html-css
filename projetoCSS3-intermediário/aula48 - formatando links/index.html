@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        a {
+            padding: 5px 10px;
+            text-decoration: none;
+        }
+        a:link { /*links não visitados (estado inicial)*/
+            color: #b9c941;
+        }
+
+        a:visited { /*links visitados*/
+            color: #b9c941;
+        }
+        a:hover { /*aplica quando passamos o mouse em cima*/
+            color: #fff;
+            background-color: #6d790f;
+        }
+
+        a:active { /*ativa quando clicamos*/
+            color: #1f1da0;
+        }
+        /*É importante manter a ordem de formatação dos links*/
+    </style>
+</head>
+<body>
+    <a href="https://www.google.com.br" target="_blank">Google</a> |
+    <a href="https://www.tecmundo.com.br" target="_blank">Tecmundo</a> |
+    <a href="https://www.megacurioso.com.br" target="_blank">Mega Curioso</a> 
+</body>
+</html>
