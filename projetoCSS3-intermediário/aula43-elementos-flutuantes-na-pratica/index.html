@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos flutuantes na prática</title>
+    <style>
+
+        body {
+            background-color: #f4f4f4;
+        }
+        #principal {
+            width: 920px;
+        }
+
+        .noticia {
+            background-color: #e5e5e5;
+            padding: 5px;
+            width: 280px;
+            margin: 8px;
+            float: left;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        .imagem-galeria{
+           background-color: white;
+           width: 265px;
+           padding: 5px;
+           float: left;
+           margin: 15px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="principal"><!--inicio principal-->
+        <div> <!--inicio noticia-->
+            <div class="noticia">
+                <h2>lorem ipsum dolor sit met 1</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi, quam minima nesciunt omnis cupiditate vitae id! Eos sunt dignissimos sit porro, doloremque, maiores temporibus autem eius debitis mollitia nostrum magni?</p>
+                <a href="#">Veja mais</a>
+            </div>
+            <div class="noticia">
+                <h2>lorem ipsum dolor sit met 2</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi, quam minima nesciunt omnis cupiditate vitae id! Eos sunt dignissimos sit porro, doloremque, maiores temporibus autem eius debitis mollitia nostrum magni?</p>
+                <a href="#">Veja mais</a>
+            </div>
+            <div class="noticia">
+                <h2>lorem ipsum dolor sit met 3</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi, quam minima nesciunt omnis cupiditate vitae id! Eos sunt dignissimos sit porro, doloremque, maiores temporibus autem eius debitis mollitia nostrum magni?</p>
+                <a href="#">Veja mais</a>
+            </div>
+        </div><!--fim noticia-->
+        <div class="clear"></div> <!--Div criada para limpar o fluxo do float e fazer com que as fotos fiquem imediatamente abaixo dos elementos (notícias) que estão flutuantes-->
+        <div>
+            <div class="imagem-galeria"><img src="imagens/imagem1.png" alt=""><p>resumo</p></div>
+            <div class="imagem-galeria"><img src="imagens/imagem2.png" alt=""><p>resumo</p></div>
+            <div class="imagem-galeria"><img src="imagens/imagem3.png" alt=""><p>resumo</p></div>
+            <div class="imagem-galeria"><img src="imagens/imagem4.png" alt=""><p>resumo</p></div>
+            <div class="imagem-galeria"><img src="imagens/imagem5.png" alt=""><p>resumo</p></div>
+        </div> 
+        
+    </div><!--fim principal-->
+</body>
+</html>

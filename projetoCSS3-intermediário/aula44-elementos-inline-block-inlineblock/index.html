@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos block, inline e inline-block</title>
+    <style>
+        .borda {
+            border: 1px solid red;
+            display: block;
+        }
+        .borda2 {
+            border: 1px solid red;
+            color: green;
+        }
+        
+        .borda3{
+            border: 1px solid red;
+            color: blue;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="borda">em modelo block o conteúdo ocupa a o tamanho disponível da página</h1>
+    <h1 class="borda">Bloco 2 bloco 2</h1>
+
+    <span class="borda2">Em modelo inline o conteúdo ocupa o tamanho da caixa</span>
+    <span class="borda2">Inline 2 inline 2</span>
+
+    <span class="borda3">no modelo inline-block temos uma mistura dos dois modelos acima, onde o conteúdo ocupará todo o espaço da caixa que o contém mas ficará disposto na mesma linha. Caso nao caiba mais ele será colocado na linha abaixo</span>
+    <span class="borda3">inline-block 3</span>
+</body>
+</html>

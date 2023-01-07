@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+.conteudo {
+    border: 1px solid red;
+    padding: 20px;
+    width: 150px;
+    margin: 20px;
+    display: inline-block;
+}
+
+/* Marging-collapse = se duas margens forem aplicadas a diferentes boxes elas irão se sobrepor e será considerada a que apresentar o maior valor. Por ex: box1 -> margin: 10px;  &&   box2 -> margin: 20px; a margin final será de 20px, pois elas se sobrepõe e é aplicada a de 20px que apresenta o maior valor.
